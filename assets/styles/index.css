@@ -33,6 +33,11 @@ a {
   border-bottom: 2px solid white;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #23F3F0;
+}
+
 .wrapper:before {
   content: '';
   display: inline-block;
