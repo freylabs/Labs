@@ -72,6 +72,7 @@ a:hover {
 
 .wrapper .content .ventures div h3 {
   text-decoration: underline;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
