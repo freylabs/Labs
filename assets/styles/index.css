@@ -1,0 +1,102 @@
+@import url('../fonts/apercu/font.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #1335FF;
+  color: white;
+  font-family: 'Apercu', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 64px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.wrapper:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+.wrapper .content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 700px;
+  padding-left: 50px;
+}
+
+.wrapper .content .marks {
+  padding: 30px 0;
+}
+
+.wrapper .content .marks img {
+  height: 35px;
+  margin-right: 50px;
+}
+
+.wrapper .content .ventures {
+  margin: 40px 0;
+}
+
+.wrapper .content .ventures div {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.wrapper .content .ventures div h3 {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  h1 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  .wrapper .content {
+    width: 90vw;
+    padding: 0 5vw;
+  }
+
+  .wrapper .content .marks img {
+    height: 25px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper:before {
+    height: 25vh;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .wrapper:before {
+    height: 8vh;
+  }
+}
