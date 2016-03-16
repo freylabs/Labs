@@ -74,6 +74,7 @@ text-decoration: none;
   -moz-transition:.3s;
   -webkit-transition:.3s;
   transition:.3s;
+  text-decoration: none;
 }
 .wrapper .content .marks img:hover {
   opacity: 1;
