@@ -42,6 +42,9 @@ a:hover {
   text-decoration: none;
   color: #23F3F0;
 }
+a img {
+text-decoration: none;
+}
 
 .wrapper:before {
   content: '';
@@ -71,7 +74,6 @@ a:hover {
   -moz-transition:.3s;
   -webkit-transition:.3s;
   transition:.3s;
-  border-bottom-style: hidden;
 }
 .wrapper .content .marks img:hover {
   opacity: 1;
