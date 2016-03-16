@@ -43,7 +43,8 @@ a:hover {
   color: #23F3F0;
 }
 .marks a {
-text-decoration: none;
+  text-decoration: none;
+  border:none;
 }
 
 .wrapper:before {
