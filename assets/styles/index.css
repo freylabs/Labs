@@ -62,7 +62,8 @@ a:hover {
 }
 
 .wrapper .content .marks img {
-  height: 35px;
+  height: 30px;
+  opacity: 0.5;
   margin-right: 30px;
   max-width: 130px;
 }
