@@ -91,7 +91,7 @@ a:hover {
 }
 
 .wrapper .content .ventures div h3 {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: normal;
 }
 
