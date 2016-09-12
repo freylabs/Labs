@@ -7,7 +7,7 @@ $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 10px;
 
 // Line height
 $base-line-height: 1.5;
@@ -44,3 +44,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Column Sizes
+$mobile-columns: 4;
+$desktop-columns: 12;
