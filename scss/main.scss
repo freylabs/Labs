@@ -1,4 +1,8 @@
-@import "neat/neat";
 @import "bourbon/bourbon";
 @import "base/base";
+@import "neat/neat";
 @import "reset";
+
+html, body {
+  font-size: $base-font-size;
+}
