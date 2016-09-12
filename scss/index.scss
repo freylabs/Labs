@@ -1,0 +1,79 @@
+@import "neat/neat";
+@import "bourbon/bourbon";
+@import "base/base";
+
+body {
+  @include outer-container;
+}
+
+.header {
+  height: 30vh;
+  padding-top: 5vh;
+  @include span-columns(10 of $desktop-columns);
+  @include shift(1);
+}
+
+.title {
+  font-size: 4.3rem;
+  font-family: 'Karla-Bold';
+  letter-spacing: 7px;
+  padding-bottom: 2vh;
+}
+
+.introduction {
+  font-size: 2rem;
+  font-family: 'Karla';
+  @include span-columns(4.5 of $desktop-columns);
+}
+
+.content {
+  background-color: #FAFAFA;
+  height: 70vh;
+  @include span-columns($desktop-columns);
+}
+
+.section {
+  @include span-columns(10 of $desktop-columns);
+  @include shift(1);
+  height: calc(70vh / 3); /* The height of the parent section / # of sections*/
+}
+
+.section-title {
+  font-family: 'Karla';
+  font-size: 2rem;
+  padding-top: 5vh;
+}
+
+.section-links {
+  @include span-columns(10 of 10);
+}
+
+.section-link {
+  opacity: 0.3;
+  transition: opacity 300ms ease-in;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.link-icon {
+  @include span-columns(0.25 of 10);
+}
+
+.link-text {
+  color: #4A4A4A;
+  font-size: 1.2rem;
+  font-family: 'Karla';
+}
+
+.email-link {
+  color: #4A4A4A;
+}
+
+.section-link-small {
+  @include span-columns(1 of 10);
+}
+
+.section-link-large {
+  @include span-columns(2 of 10);
+}
