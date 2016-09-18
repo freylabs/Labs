@@ -1,6 +1,7 @@
 @import "neat/neat";
 @import "bourbon/bourbon";
 @import "base/base";
+@import 'mixins';
 
 body {
   @include outer-container;
@@ -9,33 +10,62 @@ body {
 .header {
   height: 30vh;
   padding-top: 5vh;
-  @include span-columns(10 of $desktop-columns);
-  @include shift(1);
+  @include media($mobile) {
+    @include span-and-center(3.5 of $mobile-columns);
+  }
+  @include media($desktop) {
+    @include span-columns(10 of $desktop-columns);
+    @include shift(1);
+  }
 }
 
 .title {
-  font-size: 4.3rem;
   font-family: 'Karla-Bold';
-  letter-spacing: 7px;
   padding-bottom: 2vh;
+  @include media($mobile) {
+    font-size: 3.8rem;
+    letter-spacing: 5px;
+  }
+  @include media($desktop) {
+    font-size: 4.3rem;
+    letter-spacing: 7px;
+  }
 }
 
 .introduction {
-  font-size: 2rem;
   font-family: 'Karla';
-  @include span-columns(4.5 of $desktop-columns);
+  @include media($mobile) {
+    @include span-columns(3.5 of $mobile-columns);
+    font-size: 1.6rem;
+  }
+  @include media($desktop) {
+    @include span-columns(4.5 of $desktop-columns);
+    font-size: 2rem;
+  }
 }
 
 .content {
   background-color: #FAFAFA;
-  height: 70vh;
-  @include span-columns($desktop-columns);
+  @include media($mobile) {
+    @include span-columns($mobile-columns);
+    padding-top: 25px;
+  }
+  @include media($desktop) {
+    @include span-columns($desktop-columns);
+    height: 70vh;
+  }
 }
 
 .section {
-  @include span-columns(10 of $desktop-columns);
-  @include shift(1);
-  height: calc(70vh / 3); /* The height of the parent section / # of sections*/
+  @include media($mobile) {
+    @include span-and-center(3.5 of $mobile-columns);
+  }
+  @include media($desktop) {
+    @include span-and-center(10 of $desktop-columns);
+    @include quantity-query(3) {
+      height: calc(70vh / 3); /* The height of the parent section / # of sections*/
+    }
+  }
 }
 
 .section-title {
@@ -44,36 +74,74 @@ body {
   padding-top: 5vh;
 }
 
-.section-links {
-  @include span-columns(10 of 10);
+.links {
+  @include media($mobile) {
+    @include span-columns(3.5 of 3.5);
+  }
+  @include media($desktop) {
+    @include span-columns(10 of 10);
+  }
+}
+
+.link {
+  height: 30px;
+  margin-bottom: 20px;
 }
 
 .section-link {
+  position: relative;
   opacity: 0.3;
-  transition: opacity 300ms ease-in;
-  &:hover {
-    opacity: 1;
+  @include media($desktop) {
+    transition: opacity 300ms ease-in;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.contact-link {
+  color: #4A4A4A;
+  height: 50px;
+  @include media($mobile) {
+    @include span-columns(1.75 of 3.5);
+  }
+  @include media($desktop) {
+    @include span-columns(1.75 of 10);
   }
 }
 
 .link-icon {
-  @include span-columns(0.25 of 10);
+  @include span-columns(0.25 of 1.75);
+  @include centerY;
 }
 
 .link-text {
   color: #4A4A4A;
   font-size: 1.2rem;
   font-family: 'Karla';
+  text-align: left;
+  @include span-columns(1.5 of 1.75);
+  @include centerY;
+  @include shift(-0.25);
 }
 
-.email-link {
-  color: #4A4A4A;
+.link-small {
+  @include media($mobile) {
+    @include span-columns(1 of 3.5);
+    img {
+      height: 100%;
+    }
+  }
+  @include media($desktop) {
+    @include span-columns(1 of 10);
+  }
 }
 
-.section-link-small {
-  @include span-columns(1 of 10);
-}
-
-.section-link-large {
-  @include span-columns(2 of 10);
+.link-large {
+  @include media($mobile) {
+    @include span-columns(2 of 3.5);
+  }
+  @include media($desktop) {
+    @include span-columns(2 of 10);
+  }
 }
