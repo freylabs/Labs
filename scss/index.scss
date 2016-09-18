@@ -1,7 +1,7 @@
 @import "neat/neat";
 @import "bourbon/bourbon";
 @import "base/base";
-@import 'mixins';
+@import 'base/mixins';
 
 body {
   @include outer-container;
@@ -49,34 +49,48 @@ body {
   @include media($mobile) {
     @include span-columns($mobile-columns);
     padding-top: 25px;
+    min-height: 70vh;
   }
   @include media($desktop) {
     @include span-columns($desktop-columns);
     height: 70vh;
+    padding-top: 5vh;
   }
 }
 
 .section {
   @include media($mobile) {
     @include span-and-center(3.5 of $mobile-columns);
+    padding-top: 4vh;
   }
   @include media($desktop) {
     @include span-and-center(10 of $desktop-columns);
     @include quantity-query(3) {
-      height: calc(70vh / 3); /* The height of the parent section / # of sections*/
+      height: calc(70vh / 4); /* The height of the parent section / # of sections*/
     }
+  }
+}
+
+.polygon {
+  @include media($mobile) {
+    @include span-columns(0.25 of 3.5);
+  }
+  @include media($desktop) {
+    @include span-columns(0.25 of 10);
   }
 }
 
 .section-title {
   font-family: 'Karla';
   font-size: 2rem;
-  padding-top: 5vh;
+  margin-top: 1.5vh;
+  margin-bottom: 2.5vh;
 }
 
 .links {
   @include media($mobile) {
     @include span-columns(3.5 of 3.5);
+    margin-bottom: 8vh;
   }
   @include media($desktop) {
     @include span-columns(10 of 10);
@@ -85,12 +99,14 @@ body {
 
 .link {
   height: 30px;
-  margin-bottom: 20px;
+  @include media($mobile) {
+    margin-bottom: 5%;
+  }
 }
 
 .section-link {
   position: relative;
-  opacity: 0.3;
+  opacity: 0.1;
   @include media($desktop) {
     transition: opacity 300ms ease-in;
     &:hover {
@@ -106,12 +122,12 @@ body {
     @include span-columns(1.75 of 3.5);
   }
   @include media($desktop) {
-    @include span-columns(1.75 of 10);
+    @include span-columns(2 of 10);
   }
 }
 
 .link-icon {
-  @include span-columns(0.25 of 1.75);
+  @include span-columns(0.25 of 2);
   @include centerY;
 }
 
@@ -120,17 +136,20 @@ body {
   font-size: 1.2rem;
   font-family: 'Karla';
   text-align: left;
-  @include span-columns(1.5 of 1.75);
+  @include span-columns(1.5 of 2);
   @include centerY;
-  @include shift(-0.25);
+  @include shift(-0.2);
+}
+
+.link-image {
+  height: auto;
+  @include centerY;
 }
 
 .link-small {
   @include media($mobile) {
-    @include span-columns(1 of 3.5);
-    img {
-      height: 100%;
-    }
+    @include span-columns(1.25 of 3.5);
+    @include omega;
   }
   @include media($desktop) {
     @include span-columns(1 of 10);
@@ -144,4 +163,30 @@ body {
   @include media($desktop) {
     @include span-columns(2 of 10);
   }
+}
+
+.link-image-small {
+  @include media($mobile) {
+    @include span-columns(0.5 of 1.25);
+  }
+  @include media($desktop) {
+    @include span-columns(0.5 of 1);
+  }
+}
+
+.link-image-large {
+  @include media($mobile) {
+    @include span-columns(2 of 2);
+  }
+  @include media($desktop) {
+    @include span-columns(2 of 2);
+  }
+}
+
+footer {
+  height: 5px;
+  background-color: #1335FF;
+  width:100%;
+  position: fixed;
+  bottom: 0;
 }
