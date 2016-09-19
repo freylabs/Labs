@@ -3,30 +3,34 @@
 @import "base/base";
 @import 'base/mixins';
 
+$item-spacing: 70px;
+
 body {
   @include outer-container;
+    background-color: #FAFAFA;
 }
 
 .header {
-  height: 30vh;
-  padding-top: 5vh;
+  padding-top: $item-spacing;
+  background-color: #FFFFFF;
   @include media($mobile) {
-    @include span-and-center(3.5 of $mobile-columns);
+    @include span-columns($mobile-columns of $mobile-columns);
   }
   @include media($desktop) {
-    @include span-columns(10 of $desktop-columns);
-    @include shift(1);
+    @include span-columns($desktop-columns of $desktop-columns);
   }
 }
 
 .title {
   font-family: 'Karla-Bold';
-  padding-bottom: 2vh;
+  margin-bottom: 40px;
   @include media($mobile) {
+    @include span-and-center(3.5 of $mobile-columns);
     font-size: 3.8rem;
     letter-spacing: 5px;
   }
   @include media($desktop) {
+    @include span-and-center(10 of $desktop-columns);
     font-size: 4.3rem;
     letter-spacing: 7px;
   }
@@ -34,40 +38,38 @@ body {
 
 .introduction {
   font-family: 'Karla';
+  color: #4A4A4A;
+  margin-bottom: $item-spacing;
   @include media($mobile) {
-    @include span-columns(3.5 of $mobile-columns);
+    @include span-and-center(3.5 of $mobile-columns);
     font-size: 1.6rem;
   }
   @include media($desktop) {
-    @include span-columns(4.5 of $desktop-columns);
+    @include span-columns(3.75 of $desktop-columns);
+    @include shift(1);
     font-size: 2rem;
   }
 }
 
 .content {
-  background-color: #FAFAFA;
+  padding-top: $item-spacing;
   @include media($mobile) {
     @include span-columns($mobile-columns);
-    padding-top: 25px;
     min-height: 70vh;
   }
   @include media($desktop) {
     @include span-columns($desktop-columns);
-    height: 70vh;
-    padding-top: 5vh;
+
   }
 }
 
 .section {
+  margin-bottom: $item-spacing;
   @include media($mobile) {
     @include span-and-center(3.5 of $mobile-columns);
-    padding-top: 4vh;
   }
   @include media($desktop) {
     @include span-and-center(10 of $desktop-columns);
-    @include quantity-query(3) {
-      height: calc(70vh / 4); /* The height of the parent section / # of sections*/
-    }
   }
 }
 
@@ -84,13 +86,12 @@ body {
   font-family: 'Karla';
   font-size: 2rem;
   margin-top: 1.5vh;
-  margin-bottom: 2.5vh;
+  margin-bottom: 2vh;
 }
 
 .links {
   @include media($mobile) {
     @include span-columns(3.5 of 3.5);
-    margin-bottom: 8vh;
   }
   @include media($desktop) {
     @include span-columns(10 of 10);

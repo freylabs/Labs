@@ -31,26 +31,7 @@
   @include span-columns($span, $display);
   @include shift-in-context(($container-columns - $columns)/2);
 }
-@mixin quantity-query($number, $comparison: 'equal' ) {
-  $nth: '';
 
-  @if index( ('greater' 'more' '>'), $comparison ) {
-    $nth: 'n + #{$number}';
-  } @else if index( ('less' 'fewer' '<'), $comparison ) {
-    $nth: '-n + #{$number}';
-  } @else if index( ('equal' 'same' '='), $comparison ) {
-    $nth: $number;
-  } @else {
-    @warn "Sorry, that's an invalid $comparison value."
-  }
-
-  &:nth-last-child(#{$nth}):first-child {
-    &,
-    & ~ * {
-      @content;
-    }
-  }
-}
 // Sets the display property to none of any media breakpoint passed in.
 // Ex: @include hide-on($tablet, $desktop);
 // where $tablet and $desktop were created using Neat's new-breakpoint
