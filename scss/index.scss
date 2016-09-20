@@ -3,13 +3,15 @@
 @import "base/base";
 @import 'base/mixins';
 
+// Commonly used spacing.
 $item-spacing: 70px;
 
 body {
   @include outer-container;
-    background-color: #FAFAFA;
+  background-color: #FAFAFA;
 }
 
+/* White header at the top of the page */
 .header {
   padding-top: $item-spacing;
   background-color: #FFFFFF;
@@ -21,6 +23,7 @@ body {
   }
 }
 
+/* Container for the title and the spinning gif so they can be laid out in a row */
 .title-container {
   margin-bottom: 40px;
   height: $item-spacing;
@@ -63,6 +66,7 @@ body {
   }
 }
 
+/* Introduction text */
 .introduction {
   font-family: 'Karla';
   color: #4A4A4A;
@@ -78,11 +82,12 @@ body {
   }
 }
 
+/* Main content */
 .content {
   padding-top: $item-spacing;
   @include media($mobile) {
     @include span-columns($mobile-columns);
-    min-height: 70vh;
+    min-height: 70vh; // Make it so it always reaches the bottom at the very least.
   }
   @include media($desktop) {
     @include span-columns($desktop-columns);
@@ -90,6 +95,7 @@ body {
   }
 }
 
+/* Generic sectinon styling */
 .section {
   margin-bottom: $item-spacing;
   @include media($mobile) {
@@ -116,6 +122,9 @@ body {
   margin-bottom: 2vh;
 }
 
+/* Links */
+/* Links compromise the majority of styling for the page */
+
 .links {
   @include media($mobile) {
     @include span-columns(3.5 of 3.5);
@@ -126,12 +135,13 @@ body {
 }
 
 .link {
-  height: 30px;
+  height: 30px; // all links have the same height
   @include media($mobile) {
     margin-bottom: 5%;
   }
 }
 
+/* Non-contact, regular links */
 .section-link {
   position: relative;
   opacity: 0.1;
@@ -143,6 +153,7 @@ body {
   }
 }
 
+/* Links for contact items */
 .contact-link {
   color: #4A4A4A;
   height: 50px;
@@ -154,11 +165,13 @@ body {
   }
 }
 
+/* Styling for icons on the contact links */
 .link-icon {
   @include span-columns(0.25 of 2);
   @include centerY;
 }
 
+/* Styling for the contact link text */
 .link-text {
   color: #4A4A4A;
   font-size: 1.2rem;
@@ -170,7 +183,7 @@ body {
 }
 
 .link-image {
-  height: 30px;
+  height: 100%;
 }
 
 .link-small {
@@ -226,6 +239,7 @@ body {
   }
 }
 
+/* Floats permanently at the bottom */
 footer {
   height: 5px;
   background-color: #1335FF;

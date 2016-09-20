@@ -212,6 +212,7 @@ body::after {
   content: "";
   display: block; }
 
+/* White header at the top of the page */
 .header {
   padding-top: 70px;
   background-color: #FFFFFF; }
@@ -232,6 +233,7 @@ body::after {
   .header:last-child {
     margin-right: 0; } }
 
+/* Container for the title and the spinning gif so they can be laid out in a row */
 .title-container {
   margin-bottom: 40px;
   height: 70px; }
@@ -309,6 +311,7 @@ body::after {
   .spinner:last-child {
     margin-right: 0; } }
 
+/* Introduction text */
 .introduction {
   font-family: 'Karla';
   color: #4A4A4A;
@@ -334,6 +337,7 @@ body::after {
   .introduction:last-child {
     margin-right: 0; } }
 
+/* Main content */
 .content {
   padding-top: 70px; }
 @media screen and (max-width: 767px) {
@@ -354,6 +358,7 @@ body::after {
   .content:last-child {
     margin-right: 0; } }
 
+/* Generic sectinon styling */
 .section {
   margin-bottom: 70px; }
 @media screen and (max-width: 767px) {
@@ -398,6 +403,8 @@ body::after {
   margin-top: 1.5vh;
   margin-bottom: 2vh; }
 
+/* Links */
+/* Links compromise the majority of styling for the page */
 @media screen and (max-width: 767px) {
   .links {
     float: left;
@@ -421,6 +428,7 @@ body::after {
   .link {
     margin-bottom: 5%; } }
 
+/* Non-contact, regular links */
 .section-link {
   position: relative;
   opacity: 0.1; }
@@ -430,6 +438,7 @@ body::after {
   .section-link:hover {
     opacity: 1; } }
 
+/* Links for contact items */
 .contact-link {
   color: #4A4A4A;
   height: 50px; }
@@ -450,6 +459,7 @@ body::after {
   .contact-link:last-child {
     margin-right: 0; } }
 
+/* Styling for icons on the contact links */
 .link-icon {
   float: left;
   display: block;
@@ -462,6 +472,7 @@ body::after {
 .link-icon:last-child {
   margin-right: 0; }
 
+/* Styling for the contact link text */
 .link-text {
   color: #4A4A4A;
   font-size: 1.2rem;
@@ -480,7 +491,7 @@ body::after {
   margin-right: 0; }
 
 .link-image {
-  height: 30px; }
+  height: 100%; }
 
 @media screen and (max-width: 767px) {
   .link-small {
@@ -576,6 +587,7 @@ body::after {
   .link-image-large:last-child {
     margin-right: 0; } }
 
+/* Floats permanently at the bottom */
 footer {
   height: 5px;
   background-color: #1335FF;
