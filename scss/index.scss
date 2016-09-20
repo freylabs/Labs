@@ -58,7 +58,7 @@ body {
     height: 50%;
   }
   @include media($desktop) {
-    @include span-columns(0.75 of $desktop-columns);
+    @include span-columns(0.6 of $desktop-columns);
     @include shift(-0.5);
   }
 }
@@ -170,8 +170,7 @@ body {
 }
 
 .link-image {
-  height: auto;
-  @include centerY;
+  height: 30px;
 }
 
 .link-small {
@@ -181,6 +180,16 @@ body {
   }
   @include media($desktop) {
     @include span-columns(1 of 10);
+  }
+}
+
+.link-medium {
+  @include media($mobile) {
+    @include span-columns(1.5 of 3.5);
+    @include omega;
+  }
+  @include media($desktop) {
+    @include span-columns(1.25 of 10);
   }
 }
 
@@ -199,6 +208,12 @@ body {
   }
   @include media($desktop) {
     @include span-columns(0.5 of 1);
+  }
+}
+
+.link-image-medium {
+  @include media($desktop) {
+      @include centerX;
   }
 }
 

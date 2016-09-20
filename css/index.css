@@ -304,7 +304,7 @@ body::after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 4.0397%;
+    width: 2.76023%;
     margin-left: -4.2649%; }
   .spinner:last-child {
     margin-right: 0; } }
@@ -480,11 +480,7 @@ body::after {
   margin-right: 0; }
 
 .link-image {
-  height: auto;
-  display: block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+  height: 30px; }
 
 @media screen and (max-width: 767px) {
   .link-small {
@@ -502,6 +498,24 @@ body::after {
     margin-right: 2.84259%;
     width: 7.44167%; }
   .link-small:last-child {
+    margin-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .link-medium {
+    float: left;
+    display: block;
+    margin-right: 8.57432%;
+    width: 37.95753%;
+    margin-right: 0; }
+  .link-medium:last-child {
+    margin-right: 0; } }
+@media screen and (min-width: 768px) {
+  .link-medium {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 10.01274%; }
+  .link-medium:last-child {
     margin-right: 0; } }
 
 @media screen and (max-width: 767px) {
@@ -537,6 +551,13 @@ body::after {
     width: 30.90089%; }
   .link-image-small:last-child {
     margin-right: 0; } }
+
+@media screen and (min-width: 768px) {
+  .link-image-medium {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); } }
 
 @media screen and (max-width: 767px) {
   .link-image-large {
