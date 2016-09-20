@@ -232,15 +232,40 @@ body::after {
   .header:last-child {
     margin-right: 0; } }
 
+.title-container {
+  margin-bottom: 40px;
+  height: 70px; }
+@media screen and (max-width: 767px) {
+  .title-container {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+  .title-container:last-child {
+    margin-right: 0; } }
+@media screen and (min-width: 768px) {
+  .title-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+  .title-container:last-child {
+    margin-right: 0; } }
+
 .title {
-  font-family: 'Karla-Bold';
-  margin-bottom: 40px; }
+  margin-right: 0;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Karla-Bold'; }
 @media screen and (max-width: 767px) {
   .title {
     float: left;
     display: block;
     margin-right: 7.42297%;
-    width: 86.57213%;
+    width: 59.71639%;
+    margin-left: 20.14181%;
     margin-left: 6.71394%;
     font-size: 3.8rem;
     letter-spacing: 5px; }
@@ -251,11 +276,37 @@ body::after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%;
+    width: 23.23176%;
     margin-left: 8.5298%;
     font-size: 4.3rem;
     letter-spacing: 7px; }
   .title:last-child {
+    margin-right: 0; } }
+
+.spinner {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+@media screen and (max-width: 767px) {
+  .spinner {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: -0.70904%;
+    margin-left: 50.35452%;
+    margin-left: -6.71394%;
+    height: 50%; }
+  .spinner:last-child {
+    margin-right: 0; } }
+@media screen and (min-width: 768px) {
+  .spinner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 4.0397%;
+    margin-left: -4.2649%; }
+  .spinner:last-child {
     margin-right: 0; } }
 
 .introduction {

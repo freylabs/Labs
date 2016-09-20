@@ -21,18 +21,45 @@ body {
   }
 }
 
-.title {
-  font-family: 'Karla-Bold';
+.title-container {
   margin-bottom: 40px;
+  height: $item-spacing;
   @include media($mobile) {
-    @include span-and-center(3.5 of $mobile-columns);
+    @include span-columns($mobile-columns of $mobile-columns);
+  }
+  @include media($desktop) {
+    @include span-columns($desktop-columns of $desktop-columns);
+  }
+}
+
+.title {
+  @include omega;
+  @include centerY;
+  font-family: 'Karla-Bold';
+  @include media($mobile) {
+    @include span-and-center(2.5 of $mobile-columns);
+    @include shift(0.25);
     font-size: 3.8rem;
     letter-spacing: 5px;
   }
   @include media($desktop) {
-    @include span-and-center(10 of $desktop-columns);
+    @include span-columns(3 of $desktop-columns);
+    @include shift(1);
     font-size: 4.3rem;
     letter-spacing: 7px;
+  }
+}
+
+.spinner {
+  @include centerY;
+  @include media($mobile) {
+    @include span-and-center(0.25 of $mobile-columns);
+    @include shift(-0.25);
+    height: 50%;
+  }
+  @include media($desktop) {
+    @include span-columns(0.75 of $desktop-columns);
+    @include shift(-0.5);
   }
 }
 
