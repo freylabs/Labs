@@ -126,7 +126,9 @@ body {
   font-size: 2rem;
   margin-top: 1.5vh;
   margin-bottom: 2vh;
-  margin-left: $item-spacing;
+  @include media($desktop) {
+    margin-left: $item-spacing;
+  }
 }
 
 /* Links */
@@ -252,7 +254,6 @@ body {
 .link-image-small {
   @include media($mobile) {
     @include span-columns(0.5 of 1.25);
-    min-width: $item-spacing;
   }
 }
 
