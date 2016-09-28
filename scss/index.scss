@@ -19,7 +19,9 @@ body {
     @include span-columns($mobile-columns of $mobile-columns);
   }
   @include media($desktop) {
-    @include span-columns($desktop-columns of $desktop-columns);
+    @include span-columns($desktop-columns of $desktop-columns, block-collapse);
+    float: left;
+    width: 100%;
   }
 }
 
@@ -46,8 +48,9 @@ body {
     letter-spacing: 5px;
   }
   @include media($desktop) {
-    @include span-columns(3 of $desktop-columns);
-    @include shift(1);
+    float: left;
+    width: 350px;
+    margin-left: $item-spacing;
     font-size: 4.3rem;
     letter-spacing: 7px;
   }
@@ -61,8 +64,9 @@ body {
     height: 50%;
   }
   @include media($desktop) {
-    @include span-columns(0.6 of $desktop-columns);
-    @include shift(-0.5);
+    @include size(30px 30px);
+    float:left;
+    margin-left: -50px;
   }
 }
 
@@ -76,8 +80,9 @@ body {
     font-size: 1.6rem;
   }
   @include media($desktop) {
-    @include span-columns(3.75 of $desktop-columns);
-    @include shift(1);
+    width: 380px;
+    float: left;
+    margin-left: $item-spacing;
     font-size: 2rem;
   }
 }
@@ -91,7 +96,6 @@ body {
   }
   @include media($desktop) {
     @include span-columns($desktop-columns);
-
   }
 }
 
@@ -102,7 +106,7 @@ body {
     @include span-and-center(3.5 of $mobile-columns);
   }
   @include media($desktop) {
-    @include span-and-center(10 of $desktop-columns);
+    @include span-columns($desktop-columns of $desktop-columns);
   }
 }
 
@@ -111,7 +115,9 @@ body {
     @include span-columns(0.25 of 3.5);
   }
   @include media($desktop) {
-    @include span-columns(0.25 of 10);
+    @include size(10px 10px);
+    float: left;
+    margin-left: $item-spacing;
   }
 }
 
@@ -120,6 +126,7 @@ body {
   font-size: 2rem;
   margin-top: 1.5vh;
   margin-bottom: 2vh;
+  margin-left: $item-spacing;
 }
 
 /* Links */
@@ -130,14 +137,19 @@ body {
     @include span-columns(3.5 of 3.5);
   }
   @include media($desktop) {
-    @include span-columns(10 of 10);
+    @include size(100% auto);
+    float: left;
+    margin-left: $item-spacing;
   }
 }
 
 .link {
   height: 30px; // all links have the same height
   @include media($mobile) {
-    margin-bottom: 5%;
+    margin-bottom: 40px;
+  }
+  @include media($desktop) {
+    margin-right: $item-spacing;
   }
 }
 
@@ -161,14 +173,21 @@ body {
     @include span-columns(1.75 of 3.5);
   }
   @include media($desktop) {
-    @include span-columns(2 of 10);
+    width: 120px;
+    float: left;
   }
 }
 
 /* Styling for icons on the contact links */
 .link-icon {
-  @include span-columns(0.25 of 2);
-  @include centerY;
+  @include media($mobile) {
+    @include span-columns(0.25 of 2);
+    @include centerY;
+  }
+  @include media($desktop) {
+    width: 25px;
+    float: left;
+  }
 }
 
 /* Styling for the contact link text */
@@ -177,13 +196,16 @@ body {
   font-size: 1.2rem;
   font-family: 'Karla';
   text-align: left;
-  @include span-columns(1.5 of 2);
-  @include centerY;
-  @include shift(-0.2);
-}
-
-.link-image {
-  height: 100%;
+  @include media($mobile) {
+    @include span-columns(1.5 of 2);
+    @include centerY;
+    @include shift(-0.2);
+  }
+  @include media($desktop) {
+    width: 85px;
+    float: left;
+    margin-left: 10px;
+  }
 }
 
 .link-small {
@@ -192,7 +214,9 @@ body {
     @include omega;
   }
   @include media($desktop) {
-    @include span-columns(1 of 10);
+    width: 30px;
+    float: left;
+    margin-left: 0;
   }
 }
 
@@ -202,7 +226,8 @@ body {
     @include omega;
   }
   @include media($desktop) {
-    @include span-columns(1.25 of 10);
+    width: 100px;
+    float: left;
   }
 }
 
@@ -211,31 +236,36 @@ body {
     @include span-columns(2 of 3.5);
   }
   @include media($desktop) {
-    @include span-columns(2 of 10);
+    width: 150px;
+    float: left;
+  }
+}
+
+.link-image {
+  height: 100%;
+  @include media($desktop) {
+    width: 100%;
+    float: left;
   }
 }
 
 .link-image-small {
   @include media($mobile) {
     @include span-columns(0.5 of 1.25);
-  }
-  @include media($desktop) {
-    @include span-columns(0.5 of 1);
+    min-width: $item-spacing;
   }
 }
 
 .link-image-medium {
-  @include media($desktop) {
-      @include centerX;
+  @include media($mobile) {
+    min-width: $item-spacing;
   }
 }
 
 .link-image-large {
   @include media($mobile) {
     @include span-columns(2 of 2);
-  }
-  @include media($desktop) {
-    @include span-columns(2 of 2);
+    min-width: $item-spacing;
   }
 }
 
