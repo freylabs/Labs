@@ -5,6 +5,7 @@
 
 // Commonly used spacing.
 $item-spacing: 70px;
+$mobile-gutter: 30px;
 
 body {
   @include outer-container;
@@ -16,7 +17,9 @@ body {
   padding-top: $item-spacing;
   background-color: #FFFFFF;
   @include media($mobile) {
-    @include span-columns($mobile-columns of $mobile-columns);
+    @include span-columns($mobile-columns of $mobile-columns, block-collapse);
+    float: left;
+    width: 100%;
   }
   @include media($desktop) {
     @include span-columns($desktop-columns of $desktop-columns, block-collapse);
@@ -38,35 +41,28 @@ body {
 }
 
 .title {
-  @include omega;
   @include centerY;
   font-family: 'Karla-Bold';
+  float: left;
   @include media($mobile) {
-    @include span-and-center(2.5 of $mobile-columns);
-    @include shift(0.25);
-    min-width: 243px;
+    width: 250px;
+    margin-left: $mobile-gutter;
     font-size: 3.8rem;
     letter-spacing: 5px;
   }
   @include media($desktop) {
-    float: left;
-    width: 350px;
     margin-left: $item-spacing;
     font-size: 4.3rem;
     letter-spacing: 7px;
+    width: 350px;
   }
 }
 
 .spinner {
   @include centerY;
-  @include media($mobile) {
-    @include span-and-center(0.25 of $mobile-columns);
-    @include shift(-0.25);
-    height: 50%;
-  }
+  @include size(30px auto);
+  float: left;
   @include media($desktop) {
-    @include size(30px auto);
-    float:left;
     margin-left: -50px;
   }
 }
@@ -76,13 +72,14 @@ body {
   font-family: 'Karla';
   color: #4A4A4A;
   margin-bottom: $item-spacing;
+  float: left;
   @include media($mobile) {
-    @include span-and-center(3.5 of $mobile-columns);
+    width: 320px;
     font-size: 1.6rem;
+    margin-left: $mobile-gutter;
   }
   @include media($desktop) {
     width: 350px;
-    float: left;
     margin-left: $item-spacing;
     font-size: 1.6rem;
   }
@@ -100,11 +97,13 @@ body {
   }
 }
 
-/* Generic sectinon styling */
+/* Generic section styling */
 .section {
   margin-bottom: $item-spacing;
   @include media($mobile) {
-    @include span-and-center(3.5 of $mobile-columns);
+    width: 150%;
+    float: left;
+    margin-left: $mobile-gutter;
   }
   @include media($desktop) {
     @include span-columns($desktop-columns of $desktop-columns);
@@ -137,10 +136,10 @@ body {
 
 .links {
   @include media($mobile) {
-    @include span-columns(3.5 of 3.5);
+    float: left;
   }
   @include media($desktop) {
-    @include size(auto auto);
+    @include size(750px auto);
     float: left;
     margin-left: $item-spacing;
   }
@@ -150,6 +149,11 @@ body {
   height: 30px; // all links have the same height
   @include media($mobile) {
     margin-bottom: 40px;
+    margin-right: $item-spacing;
+    &:nth-child(4) {
+      clear: left;
+      float: left;
+    }
   }
   @include media($desktop) {
     margin-right: $item-spacing;
@@ -172,9 +176,7 @@ body {
 .contact-link {
   color: #4A4A4A;
   height: 50px;
-  @include media($mobile) {
-    @include span-columns(1.75 of 3.5);
-  }
+  float: left;
   @include media($desktop) {
     width: 120px;
     float: left;
@@ -183,8 +185,9 @@ body {
 
 /* Styling for icons on the contact links */
 .link-icon {
+  float: left;
   @include media($mobile) {
-    @include span-columns(0.25 of 2);
+    height: 15px;
     @include centerY;
   }
   @include media($desktop) {
@@ -199,44 +202,41 @@ body {
   font-size: 1.2rem;
   font-family: 'Karla';
   text-align: left;
+  float: left;
+  margin-left: 10px;
   @include media($mobile) {
-    @include span-columns(1.5 of 2);
     @include centerY;
-    @include shift(-0.2);
   }
   @include media($desktop) {
     width: 85px;
     float: left;
-    margin-left: 10px;
   }
 }
 
 .link-small {
+  float: left;
   @include media($mobile) {
-    @include span-columns(1.25 of 3.5);
-    @include omega;
+    @include size(auto 30px);
   }
   @include media($desktop) {
     width: auto;
-    float: left;
     margin-left: 0;
   }
 }
 
 .link-medium {
+  float: left;
   @include media($mobile) {
-    @include span-columns(1.5 of 3.5);
-    @include omega;
+    @include size(105px 30px);
   }
   @include media($desktop) {
     width: 100px;
-    float: left;
   }
 }
 
 .link-large {
   @include media($mobile) {
-    @include span-columns(2 of 3.5);
+    float: left;
   }
   @include media($desktop) {
     width: 150px;
@@ -245,30 +245,8 @@ body {
 }
 
 .link-image {
-  height: 100%;
-  @include media($desktop) {
-    width: 100%;
-    float: left;
-  }
-}
-
-.link-image-small {
-  @include media($mobile) {
-    @include span-columns(0.5 of 1.25);
-  }
-}
-
-.link-image-medium {
-  @include media($mobile) {
-    min-width: $item-spacing;
-  }
-}
-
-.link-image-large {
-  @include media($mobile) {
-    @include span-columns(2 of 2);
-    min-width: $item-spacing;
-  }
+  @include size(100% 100%);
+  float: left;
 }
 
 /* Floats permanently at the bottom */
