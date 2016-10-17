@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>polygon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="new-home" transform="translate(-70.000000, -399.000000)" fill="#1335FF">
+            <polygon id="polygon" points="75 399 79.330127 401.5 79.330127 406.5 75 409 70.669873 406.5 70.669873 401.5"></polygon>
+        </g>
+    </g>
+</svg>

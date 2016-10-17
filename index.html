@@ -1,42 +1,73 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang='en'>
   <head>
     <title>Frey Labs</title>
     <link rel='icon' href='assets/images/favicon.ico' type='image/x-icon' />
-    <link rel='stylesheet' type='text/css' href='assets/styles/index.css' />
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-75461203-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<meta name="google-site-verification" content="wFGE0m_LGzVqyKnK4giKvUutaOXgC9TBBUSFaXZ7B3E" />
+    <link rel='stylesheet' type='text/css' href='css/main.css' />
+    <link rel='stylesheet' type='text/css' href='css/index.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Brendan Conron">
+    <meta name="google-site-verification" content="wFGE0m_LGzVqyKnK4giKvUutaOXgC9TBBUSFaXZ7B3E" />
+    <!-- Built by Brendan Conron, conronb@gmail.com & https://www.linkedin.com/in/brendanconron. Contact for any and all freelance work. -->
   </head>
   <body>
-    <div class='wrapper'>
-      <div class='content'>
-        <h1>frey labs  <img src='assets/images/web gif_0-50.gif' height="30" width="30"/></h1>
-        <p>We&rsquo;re a private design studio specializing in digital products. We&rsquo;ve had the privilege to work with amazing clients like these, and more:</p>
-        <div class='marks'>
-          <a href='http://apple.com' target='_blank'><img src='assets/images/apple.svg' /></a>
-          <a href='http://kanyewest.com' target='_blank'><img src='assets/images/good.svg' /></a>
-          <a href='http://snapchat.com' target='_blank'><img src='assets/images/snapchat.svg' /></a>
-          <a href='http://fancy.com' target='_blank'><img src='assets/images/fancy.svg' /></a>
-          <a href='http://twitter.com' target='_blank'><img src='assets/images/twitter.svg' /></a>
-          <a href='http://shopify.com' target='_blank'><img src='assets/images/shopify.svg' /></a>
-        
+    <header class='header'>
+      <div class='title-container'>
+        <div class='title'>FREY LABS</div>
+        <img class='spinner' src='assets/images/spinner.gif' alt='spinning gif' />
+      </div>
+      <p class='introduction'>Hiya. We&#8217;re a private design studio building digital products with teams who want to build the future.</p>
+    </header>
+    <div class='content'>
+      <div class='section'>
+        <img class='polygon' src='assets/images/blue-polygon.svg' alt='Blue hexagon shape' />
+        <div class='section-title'>Clients</div>
+        <div class='links'>
+          <a class='link section-link link-small' href='https://apple.com' target='_blank'>
+            <img class='link-image' src='assets/images/apple.svg' alt='Apple logo' />
+          </a>
+          <a class='link section-link link-small' href='https://snapchat.com' target='_blank'>
+            <img class='link-image' src='assets/images/snapchat.svg' alt='Snapchat logo' />
+          </a>
+          <a class='link section-link link-small' href='https://twitter.com' target='_blank'>
+            <img class='link-image' src='assets/images/twitter.svg' alt='Twitter logo' />
+          </a>
+          <a class='link section-link link-medium' href='https://shopify.com' target='_blank'>
+            <img class='link-image' src='assets/images/shopify.png' alt='Shopify logo' />
+          </a>
+          <a class='link section-link link-large' href='https://kanyewest.com' target='_blank'>
+            <img class='link-image' src='assets/images/good.svg'  alt='Kanye Wests website' />
+          </a>
         </div>
-        <p>We also incubate a few <a href='/ventures'>ventures of our own.</a></p>
-        <br />
-        <p>If you&rsquo;re making something cool or just want to chat, <a href='mailto:hi@freylabs.net'>send us a note.</a></p>
-        <br />
-        <p>Follow us on Twitter <a href='http://twitter.com/labs' target='_blank'>@Labs &#8680;</a></p>
+      </div>
+      <div class='section'>
+        <img class='polygon' src='assets/images/yellow-polygon.svg' alt='Yellow hexagon shape' />
+        <div class='section-title'>Ventures</div>
+        <div class='links'>
+          <a class='link section-link link-large' target='_blank'>
+            <img class='link-image' src='assets/images/productget.svg' alt='Product get logo' />
+          </a>
+          <a class='link section-link link-large' href='http://busy.cm' target='_blank'>
+            <img class='link-image' src='assets/images/busy.svg' alt='Busy logo' />
+          </a>
+        </div>
+      </div>
+      <div class='section'>
+        <img class='polygon' src='assets/images/pink-polygon.svg' alt='Pink hexagon shape' />
+        <div class='section-title'>Connect</div>
+        <div class='links'>
+          <a class='link contact-link' href='mailto:hi@freylabs.net'>
+            <img class='link-icon' src='assets/images/email-icon.svg' alt='Email us at hi@freylabs.net' />
+            <div class='link-text'>hi@freylabs.net</div>
+          </a>
+          <a class='link contact-link' href='https://twitter.com/labs' target='_blank'>
+            <img class='link-icon' src='assets/images/twitter-icon.svg' alt='Contact us on Twitter @labs' />
+            <div class='link-text'>@labs</div>
+          </a>
+        </div>
       </div>
     </div>
+    <footer></footer>
+    <script src='js/index.js' async></script>
   </body>
 </html>

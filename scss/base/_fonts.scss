@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('../assets/fonts/apercu/regular/apercu_regular-webfont.eot');
+  src: url('../assets/fonts/apercu/regular/apercu_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/apercu/regular/apercu_regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/apercu/regular/apercu_regular-webfont.woff') format('woff'),
+       url('../assets/fonts/apercu/regular/apercu_regular-webfont.ttf') format('truetype'),
+       url('../assets/fonts/apercu/regular/apercu_regular-webfont.svg#apercuregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu-Bold';
+  src: url('../assets/fonts/apercu/bold/apercu_bold-webfont.eot');
+  src: url('../assets/fonts/apercu/bold/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/apercu/bold/apercu_bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/apercu/bold/apercu_bold-webfont.woff') format('woff'),
+       url('../assets/fonts/apercu/bold/apercu_bold-webfont.ttf') format('truetype'),
+       url('../assets/fonts/apercu/bold/apercu_bold-webfont.svg#apercubold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../assets/fonts/karla/Karla-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Karla-Bold';
+  src: url('../assets/fonts/karla/Karla-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
