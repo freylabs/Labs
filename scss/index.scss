@@ -152,13 +152,8 @@ body {
 
 .link {
   height: 30px; // all links have the same height
-  @include media($mobile) {
-    margin-bottom: 40px;
-    margin-right: $item-spacing;
-  }
-  @include media($desktop) {
-    margin-right: $item-spacing;
-  }
+  margin-bottom: 40px;
+  margin-right: $item-spacing;
 }
 
 /* Non-contact, regular links */
@@ -240,7 +235,6 @@ body {
     float: left;
   }
   @include media($desktop) {
-    width: 150px;
     float: left;
   }
 }
