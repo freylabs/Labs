@@ -390,12 +390,6 @@ body::after {
   margin-right: 70px;
   float: left; }
 
-.small-padding {
-  margin-right: 23.33333px; }
-
-.edge-link {
-  display: inline-block; }
-
 /* Non-contact, regular links */
 .section-link {
   position: relative;
