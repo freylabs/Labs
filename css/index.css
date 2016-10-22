@@ -384,14 +384,9 @@ body::after {
     margin-left: 70px; } }
 
 .link {
-  height: 30px; }
-@media screen and (max-width: 700px) {
-  .link {
-    margin-bottom: 40px;
-    margin-right: 70px; } }
-@media screen and (min-width: 701px) {
-  .link {
-    margin-right: 70px; } }
+  height: 30px;
+  margin-bottom: 40px;
+  margin-right: 70px; }
 
 /* Non-contact, regular links */
 .section-link {
@@ -473,7 +468,6 @@ body::after {
     float: left; } }
 @media screen and (min-width: 701px) {
   .link-large {
-    width: 150px;
     float: left; } }
 
 .link-image {
