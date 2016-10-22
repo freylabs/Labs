@@ -326,6 +326,10 @@ body::after {
   .content:last-child {
     margin-right: 0; } }
 
+.left-aligned {
+  clear: left;
+  float: left; }
+
 /* Generic section styling */
 .section {
   margin-bottom: 70px; }
@@ -361,8 +365,8 @@ body::after {
 .section-title {
   font-family: 'Karla';
   font-size: 2rem;
-  margin-top: 1.5vh;
-  margin-bottom: 2vh; }
+  margin-top: 15px;
+  margin-bottom: 10px; }
 @media screen and (min-width: 701px) {
   .section-title {
     margin-left: 70px; } }
@@ -384,10 +388,7 @@ body::after {
 @media screen and (max-width: 700px) {
   .link {
     margin-bottom: 40px;
-    margin-right: 70px; }
-  .link:nth-child(4) {
-    clear: left;
-    float: left; } }
+    margin-right: 70px; } }
 @media screen and (min-width: 701px) {
   .link {
     margin-right: 70px; } }

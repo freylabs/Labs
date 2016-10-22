@@ -97,6 +97,11 @@ body {
   }
 }
 
+.left-aligned {
+  clear: left;
+  float: left;
+}
+
 /* Generic section styling */
 .section {
   margin-bottom: $item-spacing;
@@ -124,8 +129,8 @@ body {
 .section-title {
   font-family: 'Karla';
   font-size: 2rem;
-  margin-top: 1.5vh;
-  margin-bottom: 2vh;
+  margin-top: 15px;
+  margin-bottom: 10px;
   @include media($desktop) {
     margin-left: $item-spacing;
   }
@@ -150,10 +155,6 @@ body {
   @include media($mobile) {
     margin-bottom: 40px;
     margin-right: $item-spacing;
-    &:nth-child(4) {
-      clear: left;
-      float: left;
-    }
   }
   @include media($desktop) {
     margin-right: $item-spacing;
