@@ -10,6 +10,7 @@ $mobile-gutter: 30px;
 body {
   @include outer-container;
   background-color: #FAFAFA;
+  overflow-x: hidden;
 }
 
 /* White header at the top of the page */
@@ -106,8 +107,8 @@ body {
 .section {
   margin-bottom: $item-spacing;
   @include media($mobile) {
-    width: 150%;
     float: left;
+    width: 150%;
     margin-left: $mobile-gutter;
   }
   @include media($desktop) {
@@ -154,6 +155,15 @@ body {
   height: 30px; // all links have the same height
   margin-bottom: 40px;
   margin-right: $item-spacing;
+  float: left;
+}
+
+.small-padding {
+  margin-right: $item-spacing / 3;
+}
+
+.edge-link {
+  display: inline-block;
 }
 
 /* Non-contact, regular links */
@@ -210,7 +220,6 @@ body {
 }
 
 .link-small {
-  float: left;
   @include media($mobile) {
     @include size(auto 30px);
   }
@@ -221,21 +230,11 @@ body {
 }
 
 .link-medium {
-  float: left;
   @include media($mobile) {
     @include size(105px 30px);
   }
   @include media($desktop) {
     width: 100px;
-  }
-}
-
-.link-large {
-  @include media($mobile) {
-    float: left;
-  }
-  @include media($desktop) {
-    float: left;
   }
 }
 
