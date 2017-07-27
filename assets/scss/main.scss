@@ -1,0 +1,17 @@
+@import "reset";
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/apercu-regular.woff2') format('woff2'),
+       url('../fonts/apercu-regular.woff') format('woff'),
+       url('../fonts/apercu-regular.otf') format('otf'),
+       url('../fonts/apercu-regular.ttf') format('ttf'),
+       url('../fonts/apercu-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+  font-family: 'Apercu', system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+}

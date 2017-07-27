@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" patternUnits="objectBoundingBox" x="0%" width="100%" height="100%">
+            <use xlink:href="#image-2" transform="scale(0.520833333,0.520833333)"></use>
+        </pattern>
+        <image id="image-2" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAV9JREFUaAXt2O0NgjAQBmBrt4DoDiawEHEQB1F3MK7BHKxR+2oKQfnseXCX0B/SEr3zucZIz+R57nZ+OOfuZVmeMcWaOEyWZVdjTBHicMW3aZpekMQnOyVJcqiq6hmSUq6Ig3iIyxnf+iRH7iSc8e1SleJCWGyvZsQboBlRA7QiWgCNiB+ANkQnQBOiF6AFMQjQgBgFSEdMAkhGTAZIRcwCSETMBkhDRAEkIaIBUhAkgAQEGbA2AgCDL0Edax2KrO8e3JCcCsDn10CgK/HQ2I0IZ+w9KucXBfo4mGJNHA79JfSBQhzO+FtfKFS567rEb2LrC3VV/vse507Uf2ScSQDiil8DOJOEHeFAtAAaET8AbYhOgCZEL0ALYhCgATEKkI6YBJCMmAyQipgFkIiYDZCGiAJIQkQDpCBIAAkIMmBtBAD/OMizPe+jQBh9j+JbX+hTn+a1r1K437wrfvYd/wV+UgblD/bGFgAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <rect id="Rectangle-Copy" fill="url(#pattern-1)" transform="translate(12.500000, 12.500000) rotate(-180.000000) translate(-12.500000, -12.500000) " x="0" y="0" width="25" height="25"></rect>
+    </g>
+</svg>

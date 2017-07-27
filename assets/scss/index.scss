@@ -1,0 +1,306 @@
+body {
+  padding: 5vw;
+}
+
+.mark {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.box {
+  width: 45vw;
+  height: 45vw;
+  background-color: black;
+  background: url(../images/diagonal.svg);
+  background-size: 3vw;
+  position: relative;
+
+  &.right {
+    float: right;
+  }
+
+  .inset {
+    position: absolute;
+    display: table;
+    left: 3vw;
+    width: 33vw;
+    height: 46vw;
+
+    .inner {
+      display: table-cell;
+      vertical-align: middle;
+
+      p {
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 4vw;
+
+        &.tight {
+          font-size: 2.5vw;
+          line-height: 3.3vw;
+        }
+      }
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.divider {
+  text-transform: uppercase;
+  letter-spacing: .07vw;
+  font-size: 1rem;
+  margin: 0 0 3vw 0;
+
+  .bar {
+    background: black;
+    width: 45px;
+    height: 8px;
+    margin-bottom: 2vw;
+
+    &.blue {
+      background: #1335FF;
+    }
+
+    &.purple {
+      background: #BD10E0;
+    }
+
+    &.green {
+      background: #7ED321;
+    }
+
+    &.yellow {
+      background: #F8E71C;
+    }
+
+    &.pink {
+      background: #F9286A;
+    }
+  }
+}
+
+.grid {
+  a {
+    width: 50vw;
+    float: left;
+
+    &:nth-child(odd) {
+      margin-left: -5vw;
+    }
+
+    &:nth-child(even) {
+      margin-right: -5vw;
+    }
+  }
+
+  .item {
+    width: inherit;
+    height: 20vw;
+
+    img {
+      margin: 0 auto;
+      display: block;
+      height: 4.3vw;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.apple {
+      background: url(../images/backgrounds/apple.png);
+      background-size: cover;
+    }
+
+    &.good {
+      background: url(../images/backgrounds/good.png);
+      background-size: cover;
+    }
+
+    &.snap {
+      background-color: #FFFC00;
+    }
+
+    &.twitter {
+      background-color: #059FF5;
+    }
+
+    &.shopify {
+      background-color: #30373B;
+    }
+
+    &.nobu {
+      background-color: #AF8D25;
+    }
+  }
+}
+
+.ventures {
+  img {
+    height: 3vw;
+    margin-top: 1vw;
+  }
+}
+
+section {
+  margin: 4.5vw 0;
+}
+
+.marks {
+  text-align: justify;
+
+  & > img {
+    height: 2vw;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+   }
+
+  &:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+ul.social {
+  list-style-type: none;
+
+  li {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    img {
+      height: 15px;
+      margin-right: 15px;
+      vertical-align: bottom;
+    }
+  }
+}
+.show-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px)  {
+  body {
+    padding: 7.5vw;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .box {
+    width: 85vw;
+    height: 85vw;
+    background-size: 10vw;
+
+    &.ventures {
+      background: none;
+      padding: 0;
+
+      .inset {
+        left: 0;
+      }
+    }
+
+    &.services {
+      height: 120vw;
+
+      .inset {
+        height: 118vw;
+      }
+    }
+
+    .inset {
+      left: 5vw;
+      width: 78vw;
+      height: 88vw;
+
+      .inner {
+        p {
+          font-size: 8vw;
+          line-height: 10vw;
+
+          &.tight {
+            font-size: 7vw;
+            line-height: 9vw;
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    margin: 10vw 0 10vw 0;
+    font-size: 14px;
+
+    .bar {
+      margin-bottom: 5vw;
+      width: 35px;
+    }
+  }
+
+  .grid {
+    a {
+      width: 100vw;
+      height: 55vw;
+
+      &:nth-child(odd) {
+        margin-left: -7.5vw;
+      }
+
+      &:nth-child(even) {
+        margin-left: -7.5vw;
+      }
+
+      .item {
+        width: inherit;
+        height: inherit;
+
+        img {
+          height: 10vw;
+        }
+      }
+    }
+  }
+
+  .ventures {
+    img {
+      height: 9vw;
+    }
+  }
+
+  .marks {
+    text-align: left;
+
+    & > img {
+      height: 7vw;
+      margin-right: 40px;
+      margin-bottom: 8vw;
+    }
+  }
+
+  ul.social {
+    margin-bottom: 20vw;
+
+    li {
+      margin-top: 8vw;
+    }
+  }
+}
