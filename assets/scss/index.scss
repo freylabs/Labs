@@ -58,8 +58,9 @@ body {
 
   .bar {
     background: black;
-    width: 45px;
-    height: 8px;
+    border-radius: 1px;
+    width: 35px;
+    height: 6px;
     margin-bottom: 2vw;
 
     &.blue {
