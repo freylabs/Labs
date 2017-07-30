@@ -5,6 +5,11 @@ body {
   width: 100vw;
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 999; }
+
+.stuck {
+  top: 500px;
   position: absolute; }
 
 .box {
@@ -43,8 +48,9 @@ body {
   margin: 0 0 3vw 0; }
   .divider .bar {
     background: black;
-    width: 45px;
-    height: 8px;
+    border-radius: 1px;
+    width: 35px;
+    height: 6px;
     margin-bottom: 2vw; }
     .divider .bar.blue {
       background: #1335FF; }
