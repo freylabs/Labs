@@ -3,6 +3,6 @@
 //     $('.mark').addClass('stuck');
 //   }
 //   else {
-//     $('.mark').removeClass('stuck');
+//     $;
 //   }
 // });
