@@ -1,5 +1,5 @@
  $(document).on('scroll', function() {
-   if ($(document).scrollTop() > 550) {
+   if ($(document).scrollTop() > 500) {
      $('.mark').addClass('stuck');
    }
    else {
