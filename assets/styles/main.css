@@ -41,6 +41,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 html, body {
-  font-family: 'Apercu', system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif; }
+  /* font-family: 'Apercu', system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif; } */
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
