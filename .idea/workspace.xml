@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7de8df8b-8a1b-4968-b4bd-a3630eaa3b3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/site-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Y1daQzCXf6sjYc6Fol8XQDdnRK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7de8df8b-8a1b-4968-b4bd-a3630eaa3b3f" name="Default Changelist" comment="" />
+      <created>1582114097471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582114097471</updated>
+      <workItem from="1582114098821" duration="3148000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="305" y="211" key="EditFileWatcherDialog" timestamp="1582114206415">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="305" y="211" key="EditFileWatcherDialog/0.23.1440.806@0.23.1440.806" timestamp="1582114206415" />
+  </component>
+</project>

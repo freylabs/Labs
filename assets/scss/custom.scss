@@ -1,0 +1,118 @@
+@import "normalize"; // css reset
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../../assets/fonts/SFProDisplay-Bold.eot');
+  src: url('../../assets/fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+  url('../../assets/fonts/SFProDisplay-Bold.woff') format('woff'),
+  url('../../assets/fonts/SFProDisplay-Bold.ttf') format('truetype'),
+  url('../../assets/fonts/SFProDisplay-Bold.svg#SFProDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+// globals
+body {
+  background-color: #FFF2D9;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  font-size: 16px;
+  font-family: 'SFProDisplay', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.wrapper {
+  width: 348px;
+  margin: 0 auto;
+}
+.d-block {
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+//typography
+h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+.h1,.h2,.h3 {
+  font-weight: 700;
+}
+.h1 {
+  font-size: 2.5rem;
+}
+.h2 {
+  font-size: 1.625rem;
+}
+.h3 {
+  font-size: 1rem;
+}
+.h4 {
+  font-size: .875rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+// specific styles
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: .375rem;
+  .logo {
+    img {
+      height: 12px;
+    }
+  }
+  .header-icon {
+    position: relative;
+    right: -1.25rem;
+    img {
+      height: 1rem;
+    }
+  }
+}
+.site-main {
+  border: 1px solid #000;
+  .col {
+    padding: 0 .375rem;
+    .h4 {
+      margin: .375rem 0 1rem;
+    }
+    span {
+      &:last-child {
+        margin-bottom: 1.25rem;
+      }
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #000;
+    }
+  }
+  .row {
+    &:not(:last-child) {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+.row {
+  display: flex;
+  align-items: stretch;
+  .col {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+

@@ -1,0 +1,204 @@
+body {
+  padding: 5vw; }
+
+.mark {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999; }
+
+.stuck {
+  top: 500px;
+  position: absolute; }
+
+.box {
+  width: 45vw;
+  height: 45vw;
+  background-color: black;
+  background: url(../images/diagonal.svg);
+  background-size: 3vw;
+  position: relative; }
+  .box.right {
+    float: right; }
+  .box .inset {
+    position: absolute;
+    display: table;
+    left: 3vw;
+    width: 33vw;
+    height: 46vw; }
+    .box .inset .inner {
+      display: table-cell;
+      vertical-align: middle; }
+      .box .inset .inner p {
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 4vw; }
+        .box .inset .inner p.tight {
+          font-size: 2.5vw;
+          line-height: 3.3vw; }
+
+.clear {
+  clear: both; }
+
+.divider {
+  text-transform: uppercase;
+  letter-spacing: .1vw;
+  font-size: 1rem;
+  margin: 0 0 3vw 0; }
+  .divider .bar {
+    background: black;
+    border-radius: 1px;
+    width: 35px;
+    height: 6px;
+    margin-bottom: 2vw; }
+    .divider .bar.blue {
+      background: #1335FF; }
+    .divider .bar.purple {
+      background: #BD10E0; }
+    .divider .bar.green {
+      background: #7ED321; }
+    .divider .bar.yellow {
+      background: #F8E71C; }
+    .divider .bar.pink {
+      background: #F9286A; }
+
+.grid a {
+  width: 50vw;
+  float: left; }
+  .grid a:nth-child(odd) {
+    margin-left: -5vw; }
+  .grid a:nth-child(even) {
+    margin-right: -5vw; }
+.grid .item {
+  width: inherit;
+  height: 20vw; }
+  .grid .item img {
+    margin: 0 auto;
+    display: block;
+    height: 4.3vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .grid .item.apple {
+    background: url(../images/backgrounds/apple.png);
+    background-size: cover; }
+  .grid .item.good {
+    background: url(../images/backgrounds/good.png);
+    background-size: cover; }
+  .grid .item.snap {
+    background-color: #FFFC00; }
+  .grid .item.twitter {
+    background-color: #059FF5; }
+  .grid .item.shopify {
+    background-color: #30373B; }
+  .grid .item.nobu {
+    background-color: #AF8D25; }
+
+.ventures img {
+  height: 3vw;
+  margin-top: 1vw; }
+
+section {
+  margin: 4.5vw 0; }
+
+.marks {
+  text-align: justify; }
+  .marks > img {
+    height: 2vw;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1; }
+  .marks:after {
+    content: "";
+    width: 100%;
+    display: inline-block; }
+
+ul.social {
+  list-style-type: none; }
+  ul.social li {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold; }
+    ul.social li a {
+      text-decoration: none;
+      color: black; }
+    ul.social li img {
+      height: 15px;
+      margin-right: 15px;
+      vertical-align: bottom; }
+
+.show-mobile {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 7.5vw; }
+
+  .show-mobile {
+    display: block; }
+
+  .hidden-mobile {
+    display: none; }
+
+  .box {
+    width: 85vw;
+    height: 85vw;
+    background-size: 10vw; }
+    .box.ventures {
+      background: none;
+      padding: 0; }
+      .box.ventures .inset {
+        left: 0; }
+    .box.services {
+      height: 120vw; }
+      .box.services .inset {
+        height: 118vw; }
+    .box .inset {
+      left: 5vw;
+      width: 78vw;
+      height: 88vw; }
+      .box .inset .inner p {
+        font-size: 8vw;
+        line-height: 10vw; }
+        .box .inset .inner p.tight {
+          font-size: 7vw;
+          line-height: 9vw; }
+
+  .divider {
+    margin: 10vw 0 10vw 0;
+    font-size: 14px; }
+    .divider .bar {
+      margin-bottom: 5vw;
+      width: 35px; }
+
+  .grid a {
+    width: 100vw;
+    height: 55vw; }
+    .grid a:nth-child(odd) {
+      margin-left: -7.5vw; }
+    .grid a:nth-child(even) {
+      margin-left: -7.5vw; }
+    .grid a .item {
+      width: inherit;
+      height: inherit; }
+      .grid a .item img {
+        height: 10vw; }
+
+  .ventures img {
+    height: 9vw; }
+
+  .marks {
+    text-align: left; }
+    .marks > img {
+      height: 7vw;
+      margin-right: 40px;
+      margin-bottom: 8vw; }
+
+  ul.social {
+    margin-bottom: 20vw; }
+    ul.social li {
+      margin-top: 8vw; } }
+
+/*# sourceMappingURL=index.css.map */
