@@ -319,6 +319,9 @@ body {
   font-size: 16px;
   font-family: 'SFProDisplay', sans-serif; }
 
+* {
+  box-sizing: border-box; }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -328,7 +331,7 @@ img {
   display: block; }
 
 .wrapper {
-  width: 348px;
+  max-width: 348px;
   margin: 0 auto; }
 
 .d-block {
@@ -392,5 +395,27 @@ h1 {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1; }
+
+@media screen and (max-width: 767px) {
+  body {
+    min-height: 100vh;
+    padding: 3.125rem 0; }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem; }
+
+  .h1 {
+    font-size: 2rem; }
+
+  .h2 {
+    font-size: 1.125rem; }
+
+  .site-header .logo img {
+    height: .875rem; }
+  .site-header .header-icon {
+    right: -.875rem; }
+    .site-header .header-icon img {
+      height: 1.25rem; } }
 
 /*# sourceMappingURL=custom.css.map */
