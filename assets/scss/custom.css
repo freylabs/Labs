@@ -342,19 +342,24 @@ img {
 
 h1 {
   font-size: 1rem;
+  line-height: 1.25rem;
   margin: 0; }
 
 .h1, .h2, .h3 {
   font-weight: 700; }
 
 .h1 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  line-height: 48px;
+  margin-top: -7px; }
 
 .h2 {
-  font-size: 1.625rem; }
+  font-size: 1.625rem;
+  margin-top: 23px; }
 
 .h3 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.25rem; }
 
 .h4 {
   font-size: .875rem;
@@ -365,27 +370,40 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: .375rem; }
-  .site-header .logo img {
-    height: 12px; }
+  margin-bottom: 9px; }
+  .site-header .logo {
+    margin-top: 3px; }
+    .site-header .logo img {
+      height: 10px; }
   .site-header .header-icon {
     position: relative;
     right: -1.25rem; }
     .site-header .header-icon img {
-      height: 1rem; }
+      height: 19px; }
 
 .site-main {
   border: 1px solid #000; }
   .site-main .col {
-    padding: 0 .375rem; }
+    padding: 0 .375rem;
+    min-height: 117px; }
     .site-main .col .h4 {
-      margin: .375rem 0 1rem; }
-    .site-main .col span:last-child {
-      margin-bottom: 1.25rem; }
+      margin: 5px 0 18px; }
     .site-main .col:not(:last-child) {
       border-right: 1px solid #000; }
   .site-main .row:not(:last-child) {
     border-bottom: 1px solid #000; }
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  font-weight: 300; }
+  .site-footer span {
+    display: block;
+    height: 12px;
+    padding-top: 1px; }
+    .site-footer span img {
+      height: 10px; }
 
 .row {
   display: flex;
@@ -406,16 +424,18 @@ h1 {
     padding: 0 1rem; }
 
   .h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 36px;
+    margin-top: 22px; }
+
+  .h3 {
+    font-size: .875rem; }
 
   .h2 {
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    margin-top: 31px; }
 
-  .site-header .logo img {
-    height: .875rem; }
   .site-header .header-icon {
-    right: -.875rem; }
-    .site-header .header-icon img {
-      height: 1.25rem; } }
+    right: -.875rem; } }
 
 /*# sourceMappingURL=custom.css.map */
