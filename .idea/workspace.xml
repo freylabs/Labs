@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7de8df8b-8a1b-4968-b4bd-a3630eaa3b3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/.sass-cache/78dd0c83207ee1b52163bde3bf4f1b49bc6ff136/custom.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/.sass-cache/78dd0c83207ee1b52163bde3bf4f1b49bc6ff136/custom.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582114097471</updated>
       <workItem from="1582114098821" duration="4806000" />
-      <workItem from="1582203490095" duration="1774000" />
+      <workItem from="1582203490095" duration="1929000" />
     </task>
     <task id="LOCAL-00001" summary="# freylabs home, almost done">
       <created>1582117472351</created>
@@ -81,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582118324712</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="# updates">
+      <created>1582206314608</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582206314608</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,24 +94,28 @@
     <MESSAGE value="# responsive" />
     <MESSAGE value="# min height for mobile" />
     <MESSAGE value="# ignore fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="# ignore fixes" />
+    <MESSAGE value="# updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="# updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="314" y="25" key="CommitChangelistDialog2" timestamp="1582118324394">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="314" y="24" key="CommitChangelistDialog2" timestamp="1582206314497">
+      <screen x="0" y="23" width="1440" height="801" />
     </state>
+    <state x="314" y="24" key="CommitChangelistDialog2/0.23.1440.801@0.23.1440.801" timestamp="1582206314496" />
     <state x="314" y="25" key="CommitChangelistDialog2/0.23.1440.804@0.23.1440.804" timestamp="1582118324394" />
     <state x="305" y="211" key="EditFileWatcherDialog" timestamp="1582114206415">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="305" y="211" key="EditFileWatcherDialog/0.23.1440.806@0.23.1440.806" timestamp="1582114206415" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1582118328823">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582206319611">
+      <screen x="0" y="23" width="1440" height="801" />
     </state>
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.801@0.23.1440.801" timestamp="1582206319611" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1582118328823" />
-    <state x="449" y="223" key="git4idea.merge.GitPullDialog" timestamp="1582118214028">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="449" y="222" key="git4idea.merge.GitPullDialog" timestamp="1582206315637">
+      <screen x="0" y="23" width="1440" height="801" />
     </state>
+    <state x="449" y="222" key="git4idea.merge.GitPullDialog/0.23.1440.801@0.23.1440.801" timestamp="1582206315637" />
     <state x="449" y="223" key="git4idea.merge.GitPullDialog/0.23.1440.804@0.23.1440.804" timestamp="1582118214028" />
     <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1582117597587">
       <screen x="0" y="23" width="1440" height="804" />
