@@ -11,43 +11,45 @@
   <link
     rel="icon"
     type="image/png"
-    href="https://img.freepik.com/premium-vector/yellow-orange-gradient-background_769779-455.jpg?v=2"
+    href="https://static.vecteezy.com/system/resources/thumbnails/060/574/795/small_2x/abstract-glossy-sphere-with-pink-orange-gradient-and-transparent-background-free-png.png?v=1"
   >
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <script>
-    // Dark mode toggle logic
-    function toggleTheme() {
-      const html = document.documentElement;
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        localStorage.theme = 'light';
-      } else {
-        html.classList.add('dark');
-        localStorage.theme = 'dark';
-      }
-    }
-
-    // Initialize theme
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
 
   <style>
     body {
       -webkit-font-smoothing: antialiased;
     }
   </style>
+
+  <script>
+    // Initialize theme (default LIGHT)
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    });
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const label = document.getElementById('theme-label');
+
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        label.textContent = 'Light';
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        label.textContent = 'Dark';
+      }
+    }
+  </script>
 </head>
 
-<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
+<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors duration-200">
   <main class="max-w-xl mx-auto px-6 pt-24 pb-16">
 
     <!-- Header -->
@@ -64,10 +66,10 @@
       <!-- Theme Toggle -->
       <button
         onclick="toggleTheme()"
-        class="text-xs text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
-        aria-label="Toggle dark mode"
+        class="text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+        aria-label="Toggle light or dark mode"
       >
-        ☼ / ☾
+        <span id="theme-label">Light</span>
       </button>
     </header>
 
