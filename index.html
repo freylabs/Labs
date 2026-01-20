@@ -24,26 +24,30 @@
   </style>
 
   <script>
-    // Initialize theme (default LIGHT)
     document.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('theme');
+      const icon = document.getElementById('theme-icon');
+
       if (savedTheme === 'dark') {
         document.documentElement.classList.add('dark');
+        icon.textContent = '☀️';
+      } else {
+        icon.textContent = '🌙';
       }
     });
 
     function toggleTheme() {
       const html = document.documentElement;
-      const label = document.getElementById('theme-label');
+      const icon = document.getElementById('theme-icon');
 
       if (html.classList.contains('dark')) {
         html.classList.remove('dark');
         localStorage.setItem('theme', 'light');
-        label.textContent = 'Light';
+        icon.textContent = '🌙';
       } else {
         html.classList.add('dark');
         localStorage.setItem('theme', 'dark');
-        label.textContent = 'Dark';
+        icon.textContent = '☀️';
       }
     }
   </script>
@@ -66,10 +70,10 @@
       <!-- Theme Toggle -->
       <button
         onclick="toggleTheme()"
-        class="text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+        class="text-xl text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
         aria-label="Toggle light or dark mode"
       >
-        <span id="theme-label">Light</span>
+        <span id="theme-icon">🌙</span>
       </button>
     </header>
 
