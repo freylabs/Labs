@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="transition-colors duration-200">
+<html lang="en" class="transition-colors duration-500">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,7 +17,6 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Configure Tailwind dark mode via class (must be after CDN)
     tailwind.config = {
       darkMode: 'class'
     }
@@ -26,6 +25,10 @@
   <style>
     body {
       -webkit-font-smoothing: antialiased;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    main, h1, h2, p, span, a {
+      transition: color 0.5s ease;
     }
   </style>
 
