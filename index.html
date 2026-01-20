@@ -11,11 +11,34 @@
   <link
     rel="icon"
     type="image/png"
-    href="https://img.freepik.com/premium-vector/yellow-orange-gradient-background_769779-455.jpg?v=1"
+    href="https://img.freepik.com/premium-vector/yellow-orange-gradient-background_769779-455.jpg?v=2"
   >
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    // Dark mode toggle logic
+    function toggleTheme() {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        html.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    }
+
+    // Initialize theme
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 
   <style>
     body {
@@ -24,58 +47,84 @@
   </style>
 </head>
 
-<body class="bg-neutral-50 text-neutral-900">
+<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
   <main class="max-w-xl mx-auto px-6 pt-24 pb-16">
 
     <!-- Header -->
-    <header class="mb-10">
-      <h1 class="text-3xl font-medium tracking-tight">
-        Jake Frey
-      </h1>
-      <p class="mt-2 text-neutral-500">
-        Design Leader · Entrepreneur · Founder
-      </p>
+    <header class="mb-10 flex items-start justify-between">
+      <div>
+        <h1 class="text-3xl font-medium tracking-tight">
+          Jake Frey
+        </h1>
+        <p class="mt-2 text-neutral-500 dark:text-neutral-400">
+          Design Leader · Entrepreneur · Founder
+        </p>
+      </div>
+
+      <!-- Theme Toggle -->
+      <button
+        onclick="toggleTheme()"
+        class="text-xs text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+        aria-label="Toggle dark mode"
+      >
+        ☼ / ☾
+      </button>
     </header>
 
     <!-- About -->
     <section class="mb-8">
-      <p class="text-lg leading-relaxed text-neutral-800">
+      <p class="text-lg leading-relaxed text-neutral-800 dark:text-neutral-200">
         Design leader and entrepreneur with 10+ years creating digital products and leading design teams for global brands and venture-backed startups. Founder with a proven track record of scaling technology companies, specializing in product design, brand strategy, and consumer experience.
       </p>
     </section>
 
     <!-- Credibility -->
     <section class="mb-10">
-      <p class="text-neutral-600">
+      <p class="text-neutral-600 dark:text-neutral-400">
         Clients and collaborators include
-        <span class="text-neutral-800 font-medium">
-          Apple, Twitter, Snap, Loom, and Shopify
-        </span>.
+        <span class="text-neutral-800 dark:text-neutral-200 font-medium">
+          Apple, Twitter, Snap, Loom, and Shopify.
+        </span>
       </p>
     </section>
 
     <!-- Frey Labs -->
     <section class="mb-12">
-      <h2 class="text-xs uppercase tracking-widest mb-3" style="color:#F59E0B;">
+      <h2 class="text-xs uppercase tracking-widest mb-3" style="color:#D97706;">
         Frey Labs
       </h2>
-      <p class="text-neutral-800 leading-relaxed">
+      <p class="text-neutral-800 dark:text-neutral-200 leading-relaxed">
         I collaborate with technology and consumer brands on product design, UX strategy, and brand systems. Currently focused on a small number of high-impact projects across tech and crypto.
       </p>
-      <p class="mt-3 text-neutral-500 italic">
+      <p class="mt-3 text-neutral-500 dark:text-neutral-400 italic">
         Ask me about my latest projects.
       </p>
     </section>
 
     <!-- Links -->
-    <footer class="flex gap-6 text-sm text-neutral-500">
-      <a href="/resume.pdf" class="hover:text-neutral-800 transition">
+    <footer class="flex gap-6 text-sm text-neutral-500 dark:text-neutral-400">
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+      >
         Resume
       </a>
-      <a href="mailto:freysecure@gmail.com" class="hover:text-neutral-800 transition">
+      <a
+        href="mailto:freysecure@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+      >
         Email
       </a>
-      <a href="https://www.linkedin.com/in/jakefrey" class="hover:text-neutral-800 transition">
+      <a
+        href="https://www.linkedin.com/in/jakefrey"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-neutral-800 dark:hover:text-neutral-200 transition"
+      >
         LinkedIn
       </a>
     </footer>
