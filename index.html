@@ -14,13 +14,12 @@
     href="https://static.vecteezy.com/system/resources/thumbnails/060/574/795/small_2x/abstract-glossy-sphere-with-pink-orange-gradient-and-transparent-background-free-png.png?v=1"
   >
 
-  <!-- Tailwind dark mode using class -->
+  <!-- Tailwind: Dark mode via class -->
   <script>
     tailwind.config = {
       darkMode: 'class'
     }
   </script>
-
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -30,14 +29,17 @@
   </style>
 
   <script>
+    // Initialize theme
     document.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('theme');
       const icon = document.getElementById('theme-icon');
+      const html = document.documentElement;
 
       if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark');
+        html.classList.add('dark');
         icon.textContent = '☀️';
       } else {
+        html.classList.remove('dark');
         icon.textContent = '🌙';
       }
     });
