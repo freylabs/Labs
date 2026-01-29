@@ -1,143 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="transition-colors duration-500">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Jake Frey — Design Leader & Entrepreneur</title>
-  <meta name="description" content="Design leader and entrepreneur with 10+ years of experience building digital products for global brands and startups." />
-
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="https://static.vecteezy.com/system/resources/thumbnails/060/574/795/small_2x/abstract-glossy-sphere-with-pink-orange-gradient-and-transparent-background-free-png.png?v=1"
-  >
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
-
-  <style>
-    body {
-      -webkit-font-smoothing: antialiased;
-      transition: background-color 0.5s ease, color 0.5s ease;
-    }
-    main, h1, h2, p, span, a {
-      transition: color 0.5s ease;
-    }
-  </style>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('theme');
-      const icon = document.getElementById('theme-icon');
-      const html = document.documentElement;
-
-      if (savedTheme === 'dark') {
-        html.classList.add('dark');
-        icon.textContent = '☀️';
-      } else {
-        html.classList.remove('dark');
-        icon.textContent = '🌙';
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frey Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #111111;
       }
-    });
-
-    function toggleTheme() {
-      const html = document.documentElement;
-      const icon = document.getElementById('theme-icon');
-
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-        icon.textContent = '🌙';
-      } else {
-        html.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-        icon.textContent = '☀️';
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 24px;
       }
-    }
-  </script>
-</head>
+      h1 {
+        font-size: 48px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #444;
+      }
+      img {
+        width: 100%;
+        max-width: 1000px;
+        margin: 60px auto;
+        display: block;
+        border-radius: 14px;
+      }
+    </style>
+  </head>
 
-<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
-  <main class="max-w-xl mx-auto px-6 pt-24 pb-16">
-
-    <!-- Header -->
-    <header class="mb-10 flex items-start justify-between">
-      <div>
-        <h1 class="text-3xl font-medium tracking-tight">
-          Jake Frey
-        </h1>
-        <p class="mt-2 text-neutral-500 dark:text-neutral-400">
-          Design Leader · Entrepreneur · Founder
-        </p>
-      </div>
-
-      <!-- Theme Toggle -->
-      <button
-        onclick="toggleTheme()"
-        class="text-xl text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
-        aria-label="Toggle light or dark mode"
-      >
-        <span id="theme-icon">🌙</span>
-      </button>
-    </header>
-
-    <!-- About -->
-    <section class="mb-8">
-      <p class="leading-relaxed text-neutral-800 dark:text-neutral-200">
-        Design leader and entrepreneur with 10+ years creating digital products and leading design teams for global brands and venture-backed startups. Founder with a proven track record of scaling technology companies, specializing in product design, brand strategy, and consumer experience.
+  <body>
+    <div class="container">
+      <h1>Frey Labs</h1>
+      <p>
+        Product design for complex software, fintech, and developer tools.
       </p>
-    </section>
 
-    <!-- Credibility -->
-    <section class="mb-10">
-      <p class="text-neutral-600 dark:text-neutral-400">
-        Clients and collaborators include
-        <span class="text-neutral-800 dark:text-neutral-200 font-medium">
-          Apple, Twitter, Snap, Loom, and Shopify.
-        </span>
-      </p>
-    </section>
-
-    <!-- Frey Labs -->
-    <section class="mb-12">
-      <h2 class="text-xs uppercase tracking-widest mb-3" style="color:#D97706;">
-        Frey Labs
-      </h2>
-      <p class="text-neutral-800 dark:text-neutral-200 leading-relaxed">
-        I collaborate with technology and consumer brands on product design, UX strategy, and brand systems. Currently focused on a small number of high-impact projects across tech and crypto.
-      </p>
-      <p class="mt-3 text-neutral-500 dark:text-neutral-400 italic">
-        Ask me about my latest projects.
-      </p>
-    </section>
-
-    <!-- Links -->
-    <footer class="flex gap-6 text-sm text-neutral-500 dark:text-neutral-400">
-      <a
-        href="https://www.linkedin.com/in/jakefrey"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-neutral-800 dark:hover:text-neutral-200 transition"
-      >
-        LinkedIn
-      </a>
-      <a
-        href="mailto:freysecure@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-neutral-800 dark:hover:text-neutral-200 transition"
-      >
-        Email
-      </a>
-    </footer>
-
-  </main>
-</body>
+      <img src="images/TANK2.png" alt="Product design screenshot" />
+    </div>
+  </body>
 </html>
